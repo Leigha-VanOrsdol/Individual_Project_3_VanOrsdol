@@ -13,10 +13,8 @@ def Leap_Year_statement(year):
     return False
 
 def Leap_Year_condition(year):
-    if True:
-        pass
-    else:
-        print("for branch")
+    if year >= 0:
+        DeadCode = True
     a = (year%4 == 0)
     b = (year%100 !=0)
     c = (year%400 == 0)
