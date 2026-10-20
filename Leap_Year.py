@@ -19,3 +19,13 @@ def Leap_Year_condition(year):
     b = (year%100 !=0)
     c = (year%400 == 0)
     return (a and b) or c
+
+def Leap_Year_BranchCondition(year):
+    a = (year%4 == 0)
+    b = (year%100 !=0)
+    c = (year%400 == 0)
+    #a and b are not independent
+    if (a and b) or c:
+        return True
+    else:
+        return False
